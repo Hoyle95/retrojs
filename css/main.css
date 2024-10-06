@@ -239,12 +239,14 @@ div#center {
 @media only screen and (max-width: 900px) {
     main {
         flex-direction: column;
+        max-height:1200px;
     }
 
     canvas {
         width:95%;
         margin:auto;
         margin-top:10px;
+        height:500px;
     }
 
     body {
@@ -254,5 +256,11 @@ div#center {
 
     section {
         height:500px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    canvas {
+        height:300px;
     }
 }
