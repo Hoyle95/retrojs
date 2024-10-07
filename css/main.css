@@ -1,3 +1,7 @@
+::selection {
+    background-color: transparent;
+}
+
 html {
     height:100%;
 }
@@ -5,12 +9,8 @@ html {
 body {
     background-color: #222;
     height:100%;
-    width:100%;
     margin:0;
     display:flex;
-    overflow: hidden;
-    padding:20px;
-    box-sizing: border-box;
 }
 
 a{
@@ -29,34 +29,22 @@ a:active{
 }
 
 main {
-    flex-grow:1;
-    box-sizing: border-box;
-    background-color:#fff;
     display:flex;
     border: 10px solid hsl(29, 89%, 7%);
     border-radius:20px;
-    background:#a7a7a7;
+    background:rgb(170, 170, 170);
     box-shadow: inset 0px 0px 5px rgb(60, 60, 60);
-    box-sizing: border-box;
-    width: 100%;
-    height:100%;
-    max-width:1200px;
-    max-height:600px;
     margin:auto;
-}
-
-::selection {
-    background-color: transparent;
+    flex-direction: column-reverse;
 }
 
 canvas {
     background-color:#000;
     border-radius:6px;
-    margin:7px;
+    margin:10px;
     border:3px solid #888;
     background: radial-gradient(circle, rgb(35, 35, 35) 0%, rgb(0, 0, 0) 100%);
     box-sizing: border-box;
-    width:70%;
 }
 
 section {
@@ -66,7 +54,9 @@ section {
     padding:10px;
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
+    width:100%;
+    height:500px;
+    margin:auto;
 }
 
 #ab {
@@ -131,7 +121,7 @@ section {
     text-align:right;
     display: flex;
     width:30px;
-    margin:10px 10px 0 auto;
+    margin:0 10px 0 auto;
 }
 
 #onbutton {
@@ -236,31 +226,5 @@ div#center {
     margin-bottom:-1px;
 }
 
-@media only screen and (max-width: 900px) {
-    main {
-        flex-direction: column;
-        max-height:1200px;
-    }
-
-    canvas {
-        width:95%;
-        margin:auto;
-        margin-top:10px;
-        height:500px;
-    }
-
-    body {
-        height: auto;
-        overflow: auto;
-    }
-
-    section {
-        height:500px;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    canvas {
-        height:300px;
-    }
+@media only screen and (max-width: 500px) {
 }
